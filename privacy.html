@@ -1,0 +1,66 @@
+---
+layout: null
+permalink: /privacy/
+---
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Urarin</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#fffdf9;color:#332f39;font:1rem/1.85 system-ui,sans-serif;line-break:strict;overflow-wrap:anywhere}header,main,footer{max-width:56rem;margin:auto;padding:1.25rem clamp(1rem,4vw,3rem)}header{border-bottom:1px solid #ded9df}header strong{display:block;font:700 1.45rem Georgia,serif;letter-spacing:.03em}nav{display:flex;flex-wrap:wrap;gap:.3rem 1.4rem}a{color:#5e376a;text-decoration-thickness:1px;text-underline-offset:.18em}[aria-current]{font-weight:700}h1,h2,h3{line-height:1.5}h1{font-size:clamp(1.5rem,4vw,2.4rem)}h2{font-size:1.28rem;margin-top:2.5rem}table{border-collapse:collapse;width:100%}td,th{border:1px solid #dad2da;padding:.55rem;text-align:left;vertical-align:top}th:first-child{min-width:5rem}li{margin:.4rem 0}footer{border-top:1px solid #ded9df}:focus-visible{outline:3px solid #614773;outline-offset:3px}
+</style></head><body>
+<header><strong>Urarin</strong><nav aria-label="ご利用案内"><a href="../privacy/" aria-current="page">プライバシーポリシー</a><a href="../terms/">利用規約</a><a href="../commerce/">特定商取引法に基づく表記</a><a href="../support/">お問い合わせ</a></nav></header>
+<main id="document"><h1 id="urarin-プライバシーポリシー">Urarin プライバシーポリシー</h1>
+<p>Urarin運営事務局（個人運営）が、日本向けの占いアプリUrarinで取り扱う情報について定めます。アプリの公開日から適用します。</p>
+<p>お問い合わせ：<a href="mailto:urarin.support@gmail.com"><span>urarin.support@gmail.com</span></a></p>
+<h2 id="1-取り扱う情報と使いみち">1. 取り扱う情報と使いみち</h2>
+<ul>
+<li>名前・ニックネーム、生年月日、出生時刻、出生地を端末で入力し、星の配置と四柱推命の命式を計算します。登録欄の元の名前・出生情報を鑑定の申込データとして送信しません。</li>
+<li>有料鑑定の申込時に、テーマ、端末で算出した星の配置・角度、命式、境界の情報、性別を運営サーバーに送ります。相性を扱う場合に、お相手の計算結果と性別も含みます。角度を丸めても、配置と命式から生年月日や出生時刻の幅を推定できるため、個人情報として扱います。お相手に利用目的と送信先を伝え、了解を得て入力してください。</li>
+<li>相談時に、質問、直近最大4往復の会話、署名付き要約、もとになった鑑定本文などを回答のために扱います。相談欄に氏名・住所・連絡先を書かないでください。送信対象の質問・履歴・要約を安全判定し、危険の兆候を検出したときに外部AIへの送信を止め、相談窓口を案内します。</li>
+<li>利用者識別子、同意の記録、Appleの取引情報、残高の増減、鑑定の受取状況を、本人の口座の識別、サービス提供、決済の照合、返金・不正利用対応に使います。Appleが決済を処理し、運営者がカード番号を受け取ることはありません。</li>
+<li>問い合わせ時にご自身が提供する連絡先と相談内容を、回答と対応履歴の管理に使います。端末の現在地の取得、広告目的の利用、情報の販売、他社アプリやサイトをまたいだ追跡を行いません。</li>
+</ul>
+<h2 id="2-外部サービスへの送信">2. 外部サービスへの送信</h2>
+<h3 id="openai米国">OpenAI（米国）</h3>
+<p>有料鑑定・相談の文章を生成するため、初回の同意画面で送信先、目的、対象データを示し、同意を得てから米国のOpenAIへ送ります。送信先は同意文に記載するOpenAI OpCo, LLCです。同意しない場合、外部送信を伴う機能を利用できません。登録直後の端末内での計算と、有料鑑定・相談を区別しています。</p>
+<p>米国では連邦の分野別法やカリフォルニア州の消費者プライバシー法などが適用されます。<a href="https://www.ppc.go.jp/personalinfo/legal/kaiseihogohou/#gaikoku">個人情報保護委員会の外国制度資料</a></p>
+<p>運営者はAPIに送る内容を学習用に共有しません。回答の保存を無効にして送信します。OpenAIによる不正利用監視の記録に入力・回答が含まれる場合があります。標準の保持期間は最大30日で、法令上必要な場合やサービス・第三者を危害から守るため合理的に必要な場合に延長されます。OpenAIは通信時と保存時の暗号化を案内しています。<a href="https://developers.openai.com/api/docs/guides/your-data">APIのデータ管理</a>・<a href="https://openai.com/enterprise-privacy/">保護措置</a></p>
+<h3 id="データベースと処理基盤supabase">データベースと処理基盤（Supabase）</h3>
+<p>運営者は通信の認証、鑑定の提供、取引・ポイントの記録にSupabaseの基盤を使用します。メールアドレスを入力せずに通信するため、端末の接続用に匿名の認証識別子を発行します。口座の復元用の鍵をiCloudキーチェーンに、通信の更新に使う認証情報をその端末のキーチェーンに保存します。Supabaseの公開資料によるとシンガポールの法人がサービスを提供し、サポート等に伴い米国その他の地域で処理する場合があります。シンガポールには個人データの取扱いを定めるPDPAがあります。公開資料に、アクセス制限、委託先への保護義務、国をまたぐ処理の条件が示されています。利用するサービスと国外での取扱いについてのお問い合わせを受け付けます。<a href="https://supabase.com/legal/privacy-resources/data-residency-and-transfers-faq">データ所在地と移転</a>・<a href="https://supabase.com/legal/customer-resources/data-processing-addendum">データ処理補遺</a>・<a href="https://www.ppc.go.jp/enforcement/infoprovision/laws/offshore_report_singapore/">シンガポールの制度</a></p>
+<h2 id="3-保管期間と削除">3. 保管期間と削除</h2>
+<table>
+<thead>
+<tr class="header">
+<th>内容</th>
+<th>保管と削除</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>端末の入力・履歴</td>
+<td>プロフィール、鑑定・相談の履歴、続きの相談に必要な入力の写しを端末で管理します。お相手のプロフィールを鑑定画面または設定で削除すると、そのお相手の情報を使った鑑定への追加相談ができなくなります。</td>
+</tr>
+<tr class="even">
+<td>鑑定作成中の入力</td>
+<td>配置・命式等をサーバーで暗号化して一時保管し、作成終了時に削除します。</td>
+</tr>
+<tr class="odd">
+<td>購入した鑑定本文</td>
+<td>購入履歴で読み返せるよう、サーバー側で鍵を管理して暗号化保管します。「購入履歴」で鑑定を開き、「この鑑定の本文を消す」から確定すると、サーバーと操作した端末の本文を削除します。照合用の記録が残り、同じ購入での作り直しはできません。</td>
+</tr>
+<tr class="even">
+<td>相談・聞き返し</td>
+<td>質問や同時送信する文脈を安全判定と回答作成に使います。届け直し用の回答を暗号化して一時保管し、24時間を過ぎると取得できなくなります。期限切れの回答を確認時などに削除します。期限前にも相談画面の「保存中の回答を消す」で削除できます。端末に表示した会話履歴は端末で管理します。</td>
+</tr>
+<tr class="odd">
+<td>取引・同意・問い合わせ等</td>
+<td>決済照合、返金、不正利用防止、問い合わせ対応、法令に基づく保存に必要な期間取り扱います。利用の必要がなくなった情報を削除します。復旧用のバックアップがある場合、通常の利用から切り離し、保存期間の終了に伴い消去します。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-ご本人の手続き">4. ご本人の手続き</h2>
+<p>「設定」→「アカウント」→「アカウント削除」で確認のうえ確定すると、登録、同意、鑑定本文、相談履歴、ポイント口座との結び付きが削除され、残高が失われます。取引・返金等に必要な記録は利用者との結び付きを外して保管します。アプリを端末から取り除く操作とは異なります。</p>
+<p>保有個人データの利用目的の通知、開示、訂正、利用停止、消去、第三者提供記録の開示、外部送信の同意の撤回、苦情を上記窓口で受け付けます。必要な範囲で本人確認を行い、法令に沿って対応します。事業者の氏名・住所と安全管理措置についても、ご請求に応じて遅滞なく回答します。</p>
+<p>13歳以上の方が利用できます。未成年の方は保護者と内容を確認してください。重要な変更をアプリまたは公開ページでお知らせし、送信先・利用目的等の変更で新たな同意が必要になる場合、送信前に同意を求めます。</p>
+</main>
+<footer>Urarin運営事務局</footer></body></html>
