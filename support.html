@@ -8,7 +8,7 @@ permalink: /support/
 <style>
 *{box-sizing:border-box}body{margin:0;background:#fffdf9;color:#332f39;font:1rem/1.85 system-ui,sans-serif;line-break:strict;overflow-wrap:anywhere}header,main,footer{max-width:56rem;margin:auto;padding:1.25rem clamp(1rem,4vw,3rem)}header{border-bottom:1px solid #ded9df}header strong{display:block;font:700 1.45rem Georgia,serif;letter-spacing:.03em}nav{display:flex;flex-wrap:wrap;gap:.3rem 1.4rem}a{color:#5e376a;text-decoration-thickness:1px;text-underline-offset:.18em}[aria-current]{font-weight:700}h1,h2,h3{line-height:1.5}h1{font-size:clamp(1.5rem,4vw,2.4rem)}h2{font-size:1.28rem;margin-top:2.5rem}table{border-collapse:collapse;width:100%}td,th{border:1px solid #dad2da;padding:.55rem;text-align:left;vertical-align:top}th:first-child{min-width:5rem}li{margin:.4rem 0}footer{border-top:1px solid #ded9df}:focus-visible{outline:3px solid #614773;outline-offset:3px}
 </style></head><body>
-<header><strong>Urarin</strong><nav aria-label="ご利用案内"><a href="../privacy/">プライバシーポリシー</a><a href="../terms/">利用規約</a><a href="../commerce/">特定商取引法に基づく表記</a><a href="../support/" aria-current="page">お問い合わせ</a></nav></header>
+<header><strong>Urarin</strong><nav aria-label="ご利用案内"><a href="/privacy/">プライバシーポリシー</a><a href="/terms/">利用規約</a><a href="/commerce/">特定商取引法に基づく表記</a><a href="/support/" aria-current="page">お問い合わせ</a></nav></header>
 <main id="document"><h1 id="urarin-サポート">Urarin サポート</h1>
 <p>Urarinは、西洋占星術と四柱推命を重ねて読む占いアプリです。13歳以上の方が利用できます。 運営：Urarin運営事務局</p>
 <h2 id="お問い合わせ">お問い合わせ</h2>
@@ -19,7 +19,7 @@ permalink: /support/
 <li>ポイントはApp Storeのアプリ内購入で買います。サブスクリプションではなく、毎月の料金はかかりません。</li>
 <li>購入したポイントに有効期限はありません。</li>
 <li>購入できるポイントパックの税込価格とポイント数を購入画面に表示します。</li>
-<li>鑑定のポイント：120pt（あなたが恋に落ちる瞬間／あなたが一番評価される瞬間／あなたが一番怒るとき）、240pt（片想いのあなたを動かす星／会社員・転職・独立 ― あなたの星に合う働き方／あなたのお金が出ていく入り口）、480pt（ふたりの相性の形／ふたりの星から読む相手の気持ち）。</li>
+<li>鑑定に使うポイントは、テーマごとの購入前の画面に表示します。</li>
 <li>聞き返し：1回120pt、1つの相談につき最大100回。</li>
 </ul>
 <h2 id="鑑定が届かないとき">鑑定が届かないとき</h2>
@@ -29,8 +29,13 @@ permalink: /support/
 <p>同じ相談や聞き返しを新しく送らず、同じ回答が受け取れるかを先にご確認ください。</p>
 <p>相談と聞き返しの回答は、届け直しのためだけに保管します。24時間を過ぎたものは使えなくなり、確認のときに消します。それより前に消すこともできます。</p>
 <p>買った鑑定の本文は別です。暗号化して保管し、ご本人が削除するまで残ります。</p>
+<h2>対象鑑定のタロット</h2>
+<p>対象の鑑定では、購入後に大アルカナ22枚から一枚を選べます。カードはご自身の行動のヒントです。将来や相手の行動を予言したり、結果を保証したりするものではありません。料金は鑑定に含まれ、引き直しはできません。</p>
+<p>対象の鑑定結果でカードを初めて読み込むと、サーバーが22枚の並び順と各カードの固定助言を、購入した鑑定に結び付けて暗号化保存します。裏向きのカードを混ぜると並び順が更新されます。一枚を選ぶと、サーバーが選んだ位置を保存してからカードと助言を表示します。この操作では外部のAIを呼び出しません。鑑定の本文を削除すると、保存したカードも一緒に消えます。同じ口座で履歴を開くと、選んだ一枚と助言を読み返せます。対象テーマで本文が残っている過去の購入にも一枚が含まれます。</p>
 <h2 id="外部のaiに送る内容">外部のAIに送る内容</h2>
-<p>鑑定と相談で必要な情報は、同意のうえ米国のOpenAIに送ります。星の配置の角度は、鑑定に必要な桁までに揃えて送ります。それでも、星の配置と命式から、生年月日や出生時刻の幅を逆算できることがあります。相談欄にご自身や相手を特定できる情報を書かないでください。</p>
+<p>有料鑑定を申し込むと、同意のうえ、ご本人の星の配置・四柱推命の命式・性別をUrarinのサーバーに送ります。星座や命式に境界候補があるときはその情報を、大運を計算できたときは大運の柱と周期番号も送ります。お相手と読む鑑定では、お相手についても星の配置・四柱推命の命式・性別、該当する境界候補、大運の柱と周期番号（計算できた場合）を送ります。</p>
+<p>登録欄の名前・ニックネーム、生年月日、出生時刻、出生地そのものは鑑定の申込データに含みません。星の角度を丸めても、計算結果から出生日時の範囲を推定できることがあります。</p>
+<p>文章の作成には、同意のうえ、必要な鑑定材料を米国のOpenAIに送ります。大運を使うときに鑑定材料として渡すのは柱に対応する情報で、大運の周期番号と性別そのものは大運の鑑定材料に含みません。相談では、質問、直近最大4往復の会話、署名付きの会話要約、もとの鑑定本文を回答に使います。相談欄にご本人やお相手を特定できる情報を書かないでください。</p>
 <p>プライバシーポリシーを設定から開けます。</p>
 <h2 id="買った鑑定の本文を1件だけ消す">買った鑑定の本文を1件だけ消す</h2>
 <p>購入画面の「購入履歴」から、消したい鑑定の詳細を開きます。本文が残っているときだけ表示される「この鑑定の本文を消す」を選び、「この鑑定の本文を消しますか？」の確認で「本文を消す」を選びます。「やめる」で取り消せます。 購入履歴で本文を開く前に最新の状態を確認するため、通信が必要です。通信できないときは、「通信できないため、いまは開けません。鑑定は消えていません。つながったら、もう一度開いてください。」と表示します。「最新の状況を確認」で、つながったあとにもう一度開けます。鑑定が消えたわけではありません。</p>
